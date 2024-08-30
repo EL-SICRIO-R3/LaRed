@@ -3,10 +3,24 @@ import { FullLayoutComponent } from "./full-layout.component";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { routes } from "../../app.routes";
+import { AppHeaderComponent } from "./app-header/app-header.component";
+import { SharedComponentsModule } from "../../shared-components/shared-components.module";
+
+
+
+
+const APP_COMPONENTS = [
+    AppHeaderComponent
+]
 
 @NgModule({
-    declarations: [FullLayoutComponent],
+    declarations: [
+        FullLayoutComponent
+        
+    ],
     imports: [
+        ...APP_COMPONENTS,
+        SharedComponentsModule,
         CommonModule,
         RouterModule.forChild(routes)
     ],
