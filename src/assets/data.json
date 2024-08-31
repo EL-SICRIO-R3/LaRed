@@ -1,0 +1,24 @@
+{
+    "aplicativos":{
+        "Chat": {
+            "id": 1,
+            "ruta": "/chat",
+            "descripcion":"Aplicacion para chat con IA"
+        },
+        "PaginaCumpe": {
+            "id": 2,
+            "ruta": "/cumple",
+            "descripcion":"Aplicacion para cumple de wen"
+        },
+        "IA": {
+            "id": 3,
+            "ruta": "/IA",
+            "descripcion":"Aplicacion para pruebas"
+        },
+        "Pruebas": {
+            "id": 4,
+            "ruta": "/pruebas",
+            "descripcion":"Aplicacion para pruebas"
+        }
+    }
+}
