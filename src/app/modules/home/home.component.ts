@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
+
+  data: any = [];
   
   constructor(private dataService: DataService){
 
@@ -17,6 +20,7 @@ export class HomeComponent implements OnInit {
   
   ngOnInit(): void {
     this.dataService.getData().subscribe(response =>{
+      this.data=response;
      console.log(response)
     })
   }
