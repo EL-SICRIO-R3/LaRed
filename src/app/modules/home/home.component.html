@@ -1,11 +1,12 @@
-<div *ngFor="let item of data">
-    <div class="card" style="width: 18rem;" >
-        <img src="" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="content">
+    <div *ngFor="let item of dataFiltrada" class="card-components">
+        <div class="card text-center card_content border-5" >
+            <img src="assets/img/{{item.img}}" class="card-img-top img_component" alt="">
+            <div class="card-body ">
+                <h5 class="card-title"> {{item.name}} </h5>
+                <p class="card-text"> {{item.description}} </p>
+                <a href="{{item.url}}" class="btn btn-primary">Go</a>
+            </div>
         </div>
     </div>
 </div>

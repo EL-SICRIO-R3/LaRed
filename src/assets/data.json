@@ -1,24 +1,32 @@
 {
-    "aplicativos":{
-        "Chat": {
+    "data":[
+        {
             "id": 1,
-            "ruta": "/chat",
-            "descripcion":"Aplicacion para chat con IA"
+            "name": "Chat",
+            "url": "/chat",
+            "description":"Aplicacion para chat con IA",
+            "img": "chat.svg"
         },
-        "PaginaCumpe": {
+        {
             "id": 2,
-            "ruta": "/cumple",
-            "descripcion":"Aplicacion para cumple de wen"
+            "name": "Cumple",
+            "url": "/cumple",
+            "description":"Aplicacion para cumple de wen",
+            "img": "cumple.svg"
         },
-        "IA": {
+        {
             "id": 3,
-            "ruta": "/IA",
-            "descripcion":"Aplicacion para pruebas"
+            "name": "IA",
+            "url": "/IA",
+            "description":"Aplicacion para pruebas",
+            "img": "ia.svg"
         },
-        "Pruebas": {
+        {
             "id": 4,
-            "ruta": "/pruebas",
-            "descripcion":"Aplicacion para pruebas"
+            "name": "Pruebas",
+            "url": "/pruebas",
+            "description":"Aplicacion para pruebas",
+            "img": "pruebas.svg"
         }
-    }
+    ]
 }

@@ -1,7 +1,7 @@
 
 
 
-<app-app-header/>
-<div class="container-sm">
+<app-app-header (searchEventEmmiter)="onSearch($event)" />
+<div class="p-3">
     <router-outlet></router-outlet>
 </div>

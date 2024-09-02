@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { CommonModule } from '@angular/common';
+import { IComponent } from '../../models/components';
 
 
 @Component({
@@ -12,17 +13,31 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  data: any = [];
+  data: IComponent[] = [];
+  dataFiltrada: IComponent[] = [];
+  @Input() search: string = "";
   
   constructor(private dataService: DataService){
 
   }
   
   ngOnInit(): void {
+    this.obtenerProyectos();
+  }
+
+  obtenerProyectos(){
     this.dataService.getData().subscribe(response =>{
       this.data=response;
-     console.log(response)
+      this.dataFiltrada = this.data
     })
+  }
+
+  filtrarProyectos(){
+    if(this.search.length>0){
+      this.dataFiltrada = this.data.filter(item => item.name.includes(this.search))
+    }else{
+      this.dataFiltrada = this.data
+    }
   }
 
  

@@ -5,5 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './full-layout.component.html'
 })
 export class FullLayoutComponent {
+  search: string = "";
+
+
+  onSearch(event: any){
+    console.log(event)
+  }
 
 }
+
+

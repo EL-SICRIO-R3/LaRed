@@ -1,0 +1,21 @@
+.card-components{
+    display: inline-block;
+    margin: 15px;
+}
+
+.img_component{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+.card_content{
+    width: 18rem;
+    padding-top: 15px;
+}
+
+.content{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 15px;
+}
