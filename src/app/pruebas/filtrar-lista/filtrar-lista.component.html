@@ -1,0 +1,11 @@
+
+<div class="container" style="margin-bottom: 30px;">
+    <input type="text" [(ngModel)]="searchText">
+</div>
+
+<div class="container">
+    <ul class="list-group" *ngFor="let item of lista | filter: searchText">
+        <li class="list-group-item">{{item.id}} - {{item.name}}</li>
+    </ul>
+</div>
+

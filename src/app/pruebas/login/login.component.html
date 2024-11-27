@@ -1,0 +1,32 @@
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="container">
+            <div class="row">
+                <div class="col-1 text-right">
+                    <label for="">Correo: </label>
+                </div>
+                <div class="col-2">
+                    <input type="email" placeholder="ejemplo@corre.com" formControlName="email">
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-1 text-right">
+                    <label for="">Contraseña: </label>
+                </div>
+                <div class="col-2">
+                    <input type="password"  formControlName="password">
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-4">
+                <button type="submit">Iniciar Sesion</button>
+            </div>
+        </div>
+    </form>
+</div>

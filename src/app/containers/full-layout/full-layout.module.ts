@@ -7,13 +7,15 @@ import { AppHeaderComponent } from "./app-header/app-header.component";
 import { SharedComponentsModule } from "../../shared-components/shared-components.module";
 import { HomeComponent } from "../../modules/home/home.component";
 import { HttpClientModule } from "@angular/common/http";
+import { PruebasComponent } from "../../pruebas/pruebas.component";
 
 
 
 
 const APP_COMPONENTS = [
     HomeComponent,
-    AppHeaderComponent
+    AppHeaderComponent,
+    PruebasComponent
 ]
 
 
