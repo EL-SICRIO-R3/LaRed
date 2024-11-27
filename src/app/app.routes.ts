@@ -6,12 +6,12 @@ import { PruebasComponent } from './pruebas/pruebas.component';
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'chat', component: ChatComponent }, // Define la ruta para el componente
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/pruebas', pathMatch: 'full' },
     { 
         path: 'pruebas',
         component: PruebasComponent,
         loadChildren: () => import('./pruebas/pruebas.module').then(m => m.PruebasModule)
     },
-    { path: '**', redirectTo: '/pruebas', }
+    { path: '**', redirectTo: '/home', }
 
 ];

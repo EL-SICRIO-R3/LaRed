@@ -14,28 +14,17 @@ import { PeticionesServiceService } from './peticiones-http/peticiones-service.s
 import { PruebasRoutingModule } from './pruebas-routing.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { ProyectosComponent } from './proyectos/proyectos.component';
 
 
 
 @NgModule({
   declarations: [
-    PruebasComponent,
-    FiltrarListaComponent,
-    IncrementDecrementComponent,
-    LoginComponent,
-    NavegacionComponent,
-    PeticionesHttpComponent
+    PruebasComponent
   ],
   imports: [
     PruebasRoutingModule,
-    FormsModule,
-    CommonModule,
-    FilterPipe,
-    ReactiveFormsModule,
-    HttpClientModule,
-    FilternumberPipe,
-    RouterModule,
-    BrowserModule
+    CommonModule
   ],
   providers: [PeticionesServiceService]
 })
