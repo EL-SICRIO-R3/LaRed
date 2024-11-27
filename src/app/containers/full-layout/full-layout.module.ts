@@ -14,8 +14,7 @@ import { PruebasComponent } from "../../pruebas/pruebas.component";
 
 const APP_COMPONENTS = [
     HomeComponent,
-    AppHeaderComponent,
-    PruebasComponent
+    AppHeaderComponent
 ]
 
 

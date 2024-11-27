@@ -3,8 +3,6 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [ReactiveFormsModule],
   templateUrl: './login.component.html'
 })
 export class LoginComponent {

@@ -6,8 +6,6 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-lista',
-  standalone: true,
-  imports: [CommonModule, FilterPipe, FormsModule],
   templateUrl: './filtrar-lista.component.html'
 })
 export class FiltrarListaComponent implements OnInit {

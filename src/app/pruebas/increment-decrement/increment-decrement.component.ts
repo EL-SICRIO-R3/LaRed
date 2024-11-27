@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-increment',
-  standalone: true,
-  imports: [],
   templateUrl: './increment-decrement.component.html'
 })
 export class IncrementDecrementComponent implements OnInit {
