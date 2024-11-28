@@ -39,7 +39,7 @@ export const proyectos: IProyecto[] = [
         name: "Traeas",
         url: "tareas",
         description: "Registro de tareas con directivas y emiters",
-        porcent: 0
+        porcent: 80
     }
 ]
 
