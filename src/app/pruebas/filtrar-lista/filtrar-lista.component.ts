@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { product, products } from '../models/products.model';
+import { IProduct, products } from '../models/products.model';
 import { CommonModule } from '@angular/common';
 import { FilterPipe } from "../../pipes/filter.pipe";
 import { FormsModule } from '@angular/forms';
@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class FiltrarListaComponent implements OnInit {
 
-  lista: product[] = products;
+  lista: IProduct[] = products;
   searchText: string = "";
 
   ngOnInit(): void {

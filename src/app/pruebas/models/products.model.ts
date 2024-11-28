@@ -1,9 +1,9 @@
-export interface product{
+export interface IProduct{
     id: number;
     name: string;
 }
 
-export const products: product[] = [
+export const products: IProduct[] = [
     {
         id: 1,
         name: 'producto 1'

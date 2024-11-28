@@ -13,6 +13,8 @@ import { FilterPipe } from '../../pipes/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FilternumberPipe } from '../../pipes/filternumber.pipe';
+import {DialogModule} from 'primeng/dialog';
+import { DialogService } from "primeng/dynamicdialog";
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { FilternumberPipe } from '../../pipes/filternumber.pipe';
     ReactiveFormsModule,
     HttpClientModule,
     FilternumberPipe,
-    FormsModule
-  ]
+    FormsModule,
+    DialogModule
+  ],
+  providers: [DialogService]
 })
 export class ProyectosModule { }

@@ -6,6 +6,7 @@ import { LoginComponent } from '../login/login.component';
 import { NavegacionComponent } from '../navegacion/navegacion.component';
 import { PeticionesHttpComponent } from '../peticiones-http/peticiones-http.component';
 import { ListadoComponent } from './listado/listado.component';
+import { DetailsComponent } from '../navegacion/details/details.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'listado',
     component: ListadoComponent
+  },
+  {
+    path: 'navegacion/detalles/:id',
+    component: DetailsComponent
   },
   { path: '', redirectTo: 'listado', pathMatch: 'full' }
 ];
