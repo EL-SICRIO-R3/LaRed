@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilternumberPipe } from '../../pipes/filternumber.pipe';
 import {DialogModule} from 'primeng/dialog';
 import { DialogService } from "primeng/dynamicdialog";
+import { DetailsComponent } from '../navegacion/details/details.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DialogService } from "primeng/dynamicdialog";
     LoginComponent,
     NavegacionComponent,
     PeticionesHttpComponent,
-    ListadoComponent
+    ListadoComponent,
+    DetailsComponent
   ],
   imports: [
     CommonModule,
