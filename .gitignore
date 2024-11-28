@@ -55,3 +55,7 @@ package-lock.json
 .scannerwork/
 dist.zip
 .DS_Store
+
+# Ignorar caché de Angular
+.angular/cache/
+.angular/cache/*
