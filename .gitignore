@@ -59,3 +59,4 @@ dist.zip
 # Ignorar caché de Angular
 .angular/cache/
 .angular/cache/*
+.vercel
