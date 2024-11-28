@@ -1,0 +1,13 @@
+<form action="" [formGroup]="formTarea" (ngSubmit)="onAddTask()">
+    <div>
+        <label for="">Titulo</label>
+        <input type="text"  class="form-control" placeholder="titulo ejemplo" formControlName="title">
+    </div>
+    <div>
+        <label for="">Descripcion</label>
+        <textarea pInputTextarea class="form-control" placeholder="contenido" formControlName="description"></textarea>
+    </div>
+    <div style="margin-top: 10px; text-align: right;">
+        <button class="w-100" class="btn btn-primary" type="submit">Guardar</button>
+    </div>
+</form>

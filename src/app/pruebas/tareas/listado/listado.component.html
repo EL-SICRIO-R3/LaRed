@@ -1,0 +1,16 @@
+<tr *ngFor="let item of tareas">
+    <th scope="row">{{item.id}}</th>
+    <td>{{item.title}}</td>
+    <td>{{item.description}}</td>
+    <td>
+        <div class="row" >
+            <div class="col-4 text-center">
+                <button type="button" class="btn btn-primary" >Editar</button>
+            </div>
+            <div class="col-4 text-center">
+                <button type="button" class="btn btn-success" [disabled]="item.completed" (click)="onCompleted(item.id)">Completado</button>
+            </div>
+        </div>
+       
+    </td>
+</tr>

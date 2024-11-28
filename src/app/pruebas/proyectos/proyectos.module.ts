@@ -16,6 +16,10 @@ import { FilternumberPipe } from '../../pipes/filternumber.pipe';
 import {DialogModule} from 'primeng/dialog';
 import { DialogService } from "primeng/dynamicdialog";
 import { DetailsComponent } from '../navegacion/details/details.component';
+import { TareasComponent } from '../tareas/tareas.component';
+import { AgregarComponent } from '../tareas/agregar/agregar.component';
+import { ListadoComponentTareas } from '../tareas/listado/listado.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -27,7 +31,8 @@ import { DetailsComponent } from '../navegacion/details/details.component';
     NavegacionComponent,
     PeticionesHttpComponent,
     ListadoComponent,
-    DetailsComponent
+    DetailsComponent,
+    TareasComponent,
   ],
   imports: [
     CommonModule,
@@ -37,7 +42,10 @@ import { DetailsComponent } from '../navegacion/details/details.component';
     HttpClientModule,
     FilternumberPipe,
     FormsModule,
-    DialogModule
+    DialogModule,
+    AgregarComponent,
+    ListadoComponentTareas
+    
   ],
   providers: [DialogService]
 })

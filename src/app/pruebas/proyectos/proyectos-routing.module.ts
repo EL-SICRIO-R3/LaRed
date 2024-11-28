@@ -7,6 +7,7 @@ import { NavegacionComponent } from '../navegacion/navegacion.component';
 import { PeticionesHttpComponent } from '../peticiones-http/peticiones-http.component';
 import { ListadoComponent } from './listado/listado.component';
 import { DetailsComponent } from '../navegacion/details/details.component';
+import { TareasComponent } from '../tareas/tareas.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'navegacion/detalles/:id',
     component: DetailsComponent
+  },
+  {
+    path: 'tareas',
+    component: TareasComponent
   },
   { path: '', redirectTo: 'listado', pathMatch: 'full' }
 ];
