@@ -1,5 +1,5 @@
-<tr *ngFor="let item of tareas">
-    <th scope="row">{{item.id}}</th>
+<tr *ngFor="let item of tareas" >
+    <th scope="row" [ngClass]="{'completed': item.completed, '': !item.completed}">{{item.id}}</th>
     <td>{{item.title}}</td>
     <td>{{item.description}}</td>
     <td>

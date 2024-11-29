@@ -3,7 +3,8 @@ import { ITarea, tareas } from '../models/tareas';
 
 @Component({
   selector: 'app-tareas',
-  templateUrl: './tareas.component.html'
+  templateUrl: './tareas.component.html',
+  styleUrl: './tareas.component.css'
 })
 export class TareasComponent {
   
@@ -22,8 +23,9 @@ export class TareasComponent {
   }
 
   onAddTask(event: ITarea){
-    event.id = this.tareas.length
+    event.id = this.tareas.length + 1
     this.tareas.push(event)
+    this.formulario = false
   }
 
   onCompleted(event: number){

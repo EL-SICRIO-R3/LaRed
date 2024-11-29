@@ -33,6 +33,9 @@ export class AgregarComponent implements OnInit{
   onAddTask(){
     if(this.formTarea.valid){
       this.onAddEmitter.emit(this.formTarea.value)
+      this.formTarea.reset
+    }else{
+      
     }
     
   }

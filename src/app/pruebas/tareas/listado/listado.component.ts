@@ -8,7 +8,8 @@ import {DialogService, DynamicDialogModule} from 'primeng/dynamicdialog';
   standalone: true,
   imports: [CommonModule, DynamicDialogModule],
   providers: [DialogService],
-  templateUrl: './listado.component.html'
+  templateUrl: './listado.component.html',
+  styleUrl: '../tareas.component.css'
 })
 export class ListadoComponentTareas implements OnInit{
 
