@@ -39,7 +39,21 @@ export const proyectos: IProyecto[] = [
         name: "Traeas",
         url: "tareas",
         description: "Registro de tareas con directivas y emiters",
-        porcent: 80
+        porcent: 100
+    },
+    {
+        id: 7,
+        name: "Operadores",
+        url: "operadores",
+        description: "Uso de operadores para modificar las peticiones",
+        porcent: 100
+    },
+    {
+        id: 8,
+        name: "Directivas",
+        url: "directivas",
+        description: "Uso de directivas customs",
+        porcent: 100
     }
 ]
 

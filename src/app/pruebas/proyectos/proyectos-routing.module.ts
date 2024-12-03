@@ -8,6 +8,8 @@ import { PeticionesHttpComponent } from '../peticiones-http/peticiones-http.comp
 import { ListadoComponent } from './listado/listado.component';
 import { DetailsComponent } from '../navegacion/details/details.component';
 import { TareasComponent } from '../tareas/tareas.component';
+import { OperadoresComponent } from '../operadores/operadores.component';
+import { DirectivasComponent } from '../directivas/directivas.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,15 @@ const routes: Routes = [
   {
     path: 'tareas',
     component: TareasComponent
+  },
+  {
+    path: 'directivas',
+    component: DirectivasComponent
+  },
+  { 
+    path: 'operadores',
+    component: OperadoresComponent,
+    loadChildren: () => import('../operadores/operadores.module').then(m => m.OperadoresModule)
   },
   { path: '', redirectTo: 'listado', pathMatch: 'full' }
 ];

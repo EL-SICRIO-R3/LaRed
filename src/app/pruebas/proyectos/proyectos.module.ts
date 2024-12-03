@@ -19,7 +19,8 @@ import { DetailsComponent } from '../navegacion/details/details.component';
 import { TareasComponent } from '../tareas/tareas.component';
 import { AgregarComponent } from '../tareas/agregar/agregar.component';
 import { ListadoComponentTareas } from '../tareas/listado/listado.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { DirectivasComponent } from '../directivas/directivas.component';
+import { NotImageDirective } from '../directivas/not-image.directive';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ListadoComponent,
     DetailsComponent,
     TareasComponent,
+    DirectivasComponent,
+    NotImageDirective
   ],
   imports: [
     CommonModule,
@@ -45,7 +48,6 @@ import { BrowserModule } from '@angular/platform-browser';
     DialogModule,
     AgregarComponent,
     ListadoComponentTareas
-    
   ],
   providers: [DialogService]
 })
