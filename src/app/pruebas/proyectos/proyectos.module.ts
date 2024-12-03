@@ -21,6 +21,8 @@ import { AgregarComponent } from '../tareas/agregar/agregar.component';
 import { ListadoComponentTareas } from '../tareas/listado/listado.component';
 import { DirectivasComponent } from '../directivas/directivas.component';
 import { NotImageDirective } from '../directivas/not-image.directive';
+import { AppNotDirective } from '../directivas/app-not.directive';
+import { HoverColorDirective } from '../directivas/hover-color.directive';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { NotImageDirective } from '../directivas/not-image.directive';
     DetailsComponent,
     TareasComponent,
     DirectivasComponent,
-    NotImageDirective
+    NotImageDirective,
+    AppNotDirective,
+    HoverColorDirective
   ],
   imports: [
     CommonModule,
